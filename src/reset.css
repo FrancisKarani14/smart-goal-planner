@@ -35,6 +35,7 @@ input{
     margin-bottom: 10px;
     background-color: #d5d8dc;
     font-size: 1.5rem;
+    color: black;
 }
 button{
     cursor: pointer;

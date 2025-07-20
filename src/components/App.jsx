@@ -67,7 +67,7 @@ function App() {
   return (
     <div className='body'>
       <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
-      <Form />
+      <Form formData={formData} />
       <div className='display' >
         <ul>
           {goals.map((goal)=>{
