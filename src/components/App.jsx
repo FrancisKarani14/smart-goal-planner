@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import Display from './Display'
 import Form from './Form'
 import '../reset.css'
