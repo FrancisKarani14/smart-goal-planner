@@ -75,13 +75,39 @@ function handleChange(e) {
 // handle submit
 
 function handleSubmit(e) {
-  
+  e.preventDefault();
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+  })
+    .then((res) => {
+      if (!res.ok) throw new Error("Failed to add goal");
+      return res.json();
+    })
+    .then((newGoal) => {
+      setGoals((prevGoals) => [...prevGoals, newGoal]);
+      setFormData({
+        name: '',
+        targetAmount: '',
+        savedAmount: '',
+        balance: '',
+        category: '',
+        deadline: '',
+        createdAt: '',
+      });
+    })
+    .catch((err) => console.error("Error submitting goal:", err));
 }
+
 
   return (
     <div className='body'>
       <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
-      <Form formData={formData} handleChange={handleChange} />
+      <Form formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
       <div className='display' >
         <ul>
           {goals.map((goal)=>{
