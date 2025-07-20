@@ -1,14 +1,15 @@
 import React from 'react'
 import Display from './Display'
 import Form from './Form'
+import '../reset.css'
 
 function App() {
   return (
-    <>
-      <h1>Welcome to Smart Goal Planner</h1>
+    <div className='body'>
+      <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
       <Form />
       <Display />
-    </>
+    </div>
   )
 }
 
