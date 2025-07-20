@@ -64,16 +64,30 @@ function App() {
       
     }
 
+    // Abstract function to handle input change
+function handleChange(e) {
+  const { name, value } = e.target;
+  setFormData((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+}
+// handle submit
+
+function handleSubmit(e) {
+  
+}
+
   return (
     <div className='body'>
       <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
-      <Form formData={formData} />
+      <Form formData={formData} handleChange={handleChange} />
       <div className='display' >
         <ul>
           {goals.map((goal)=>{
             return(
                <li key={goal.id}>
-              <Goalscard  {...goal} handleDelete={handleDelete} handleUpdate={handleUpdate} />
+              <Goalscard  {...goal} handleDelete={handleDelete} handleUpdate={handleUpdate}  />
             </li>
             )
            
