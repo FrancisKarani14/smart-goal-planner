@@ -1,7 +1,7 @@
 import React from 'react'
 import '../reset.css'
 
-export default function Goalscard({name, targetAmount, savedAmount, balance, category, deadline, createdAt }) {
+export default function Goalscard({name, targetAmount, savedAmount, balance, category, deadline, createdAt, handleUpdate, handleDelete }) {
   return (
     <div className='card' >
       <h2>{name} </h2>
@@ -11,8 +11,8 @@ export default function Goalscard({name, targetAmount, savedAmount, balance, cat
           <p> category {category} </p>
            <p> Deadline{deadline} </p>
            <p> Starting Day{createdAt} </p>
-           <button>Delete</button>
-           <button>update</button>
+           <button onClick={handleDelete} >Delete</button>
+           <button onClick={handleUpdate}>update</button>
            
       
     </div>

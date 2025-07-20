@@ -18,6 +18,19 @@ function App() {
     .catch(err => console.error("Error:", err));
      },[])
 
+    //  function for handling delete. It deletes A goal specific goal when clicked
+
+    function handleDelete(params) {
+      
+    }
+
+    // function for handling update it Updates a goal when clicked
+
+    function handleUpdate() {
+
+      
+    }
+
   return (
     <div className='body'>
       <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
@@ -27,7 +40,7 @@ function App() {
           {goals.map((goal)=>{
             return(
                <li key={goal.id}>
-              <Goalscard  {...goal}/>
+              <Goalscard  {...goal} handleDelete={handleDelete} handleUpdate={handleUpdate} />
             </li>
             )
            
