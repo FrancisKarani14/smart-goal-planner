@@ -6,18 +6,32 @@ import '../reset.css'
 
 function App() {
 // Fetch request as a sude effect since it fetches after render.
-  useEffect(()=>{
-    fetch(" http://localhost:3000/goals")
+// state variables
+    const[goals, setGoals] = useState([])
 
-  },[])
+  useEffect(()=>{
+
+    
+    fetch(" http://localhost:3000/goals")
+    .then(res=>res.json())
+    .then(data=> setGoals(data) )
+    .catch(err => console.error("Error:", err));
+     },[])
 
   return (
     <div className='body'>
       <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
       <Form />
-      <div>
+      <div className='display' >
         <ul>
-          <Goalscard /> 
+          {goals.map((goal)=>{
+            return(
+               <li>
+              <Goalscard key={goal.id} {...goal}/>
+            </li>
+            )
+           
+          })}
         </ul>
 
       </div>
