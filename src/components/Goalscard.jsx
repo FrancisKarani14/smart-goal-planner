@@ -1,18 +1,18 @@
 import React from 'react'
 import '../reset.css'
 
-export default function Goalscard({name, targetAmount, savedAmount, balance, category, deadline, createdAt, handleUpdate, handleDelete }) {
+export default function Goalscard({name, targetAmount, savedAmount, balance, category, deadline, createdAt, handleUpdate, handleDelete , id}) {
   return (
     <div className='card' >
       <h2>{name} </h2>
-       <p> Target Amount {targetAmount} </p>
-        <p> Saved Amount {savedAmount} </p>
-         <p> Balance {balance} </p>
-          <p> category {category} </p>
-           <p> Deadline{deadline} </p>
-           <p> Starting Day{createdAt} </p>
-           <button onClick={handleDelete} >Delete</button>
-           <button onClick={handleUpdate}>update</button>
+       <p> <strong>Target Amount:</strong> {targetAmount} </p>
+        <p> <strong>Saved Amount:</strong> {savedAmount} </p>
+         <p> <strong>Balance: </strong> {balance} </p>
+          <p> <strong>category:</strong> {category} </p>
+           <p> <strong>Deadline:</strong> {deadline} </p>
+           <p> <strong>Starting Day:</strong> {createdAt} </p>
+            <button onClick={() => handleDelete(id)} className='deleteBtn'>Delete</button>
+      <button onClick={() => handleUpdate(id)} className='updateBtn'>Update</button>
            
       
     </div>

@@ -38,6 +38,7 @@ input{
 }
 button{
     cursor: pointer;
+    background-color: rgb(49, 49, 255);
 }
 .display ul{
     display: flex;
@@ -73,4 +74,10 @@ button{
 }
 .card button{
     margin: 5px;
+}
+.updateBtn{
+    background-color: rgb(65, 253, 213);
+}
+.deleteBtn{
+    background-color: #ec7063;
 }
