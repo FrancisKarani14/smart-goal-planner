@@ -3,14 +3,14 @@ import '../reset.css'
 
 export default function Goalscard({name, targetAmount, savedAmount, balance, category, deadline, createdAt }) {
   return (
-    <div>
+    <div className='card' >
       <h2>{name} </h2>
-       <h2> Target Amount {targetAmount} </h2>
-        <h2> Saved Amount {savedAmount} </h2>
-         <h2> Balance {balance} </h2>
-          <h2> category {category} </h2>
-           <h2> Deadline{deadline} </h2>
-           <h2> Starting Day{createdAt} </h2>
+       <p> Target Amount {targetAmount} </p>
+        <p> Saved Amount {savedAmount} </p>
+         <p> Balance {balance} </p>
+          <p> category {category} </p>
+           <p> Deadline{deadline} </p>
+           <p> Starting Day{createdAt} </p>
            <button>Delete</button>
            <button>update</button>
            

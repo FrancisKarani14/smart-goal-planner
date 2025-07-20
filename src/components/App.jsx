@@ -26,8 +26,8 @@ function App() {
         <ul>
           {goals.map((goal)=>{
             return(
-               <li>
-              <Goalscard key={goal.id} {...goal}/>
+               <li key={goal.id}>
+              <Goalscard  {...goal}/>
             </li>
             )
            

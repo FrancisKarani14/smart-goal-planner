@@ -9,11 +9,12 @@
 }
 .body{
     background-color: var(--body1);
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
 }
 .welcome{
     color: #2c3e50;    
@@ -37,4 +38,38 @@ input{
 }
 button{
     cursor: pointer;
+}
+.display ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    margin: 30px;
+    background-color: var(--body1);
+    height: auto;
+    width: 100vw;
+    padding-bottom: 30px;
+
+}
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px black;
+
+}
+.display{
+    height: 100vh;
+}
+.card h2{
+    text-align: center;
+    color: #2c3e50;
+    
+}
+.card p{
+    color: black;
+}
+.card button{
+    margin: 5px;
 }
