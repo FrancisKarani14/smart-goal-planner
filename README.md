@@ -2,6 +2,21 @@
 
 A simple application for a fintech that Allows users to set Specific saving goals. and make savings. One can see the the number of goals set, update a goal, delete an goal, and add a goal.
 
+**Freatures**
+
+> Aform
+
+> A functining delete and update button to manipulate goals
+
+
+> Automatic Calender setting
+
+
+> An automatically set ammount of money saved
+
+
+> An automatically set Number of goals 
+
 **Tachnologies used**
 
 
