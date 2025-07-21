@@ -16,6 +16,8 @@ function App() {
 });
 
   const numberOfGoals = goals.length
+  const totalSaved = goals.reduce((sum, goal) => sum + Number(goal.savedAmount), 0);
+
 
   const url = 'http://localhost:3000/goals';
 
@@ -26,7 +28,7 @@ function App() {
       .then(data => setGoals(data))
       .catch(err => console.error("Fetch Error:", err));
   }, []);
-  
+
   useEffect(() => {
   const interval = setInterval(() => {
     setFormData(prev => ({
@@ -152,6 +154,7 @@ function App() {
         handleSubmit={handleSubmit}
       />
        <h3>Dear client, you have {numberOfGoals} goals </h3>
+       <h3>Dear client, you have saved {totalSaved} </h3>
       <div className='display'>
         <ul>
           {goals.map(goal => (

@@ -9,7 +9,7 @@ export default function Goalscard({name, targetAmount, savedAmount, balance, cat
         <p> <strong>Saved Amount:</strong> {savedAmount} </p>
          <p> <strong>Balance: </strong> {balance} </p>
           <p> <strong>category:</strong> {category} </p>
-           <p> <strong>Deadline:</strong> {deadline} </p>
+           <p className='deadline'> <strong>Deadline:</strong> {deadline} </p>
            <p> <strong>Starting Day:</strong> {createdAt} </p>
             <button onClick={() => handleDelete(id)} className='deleteBtn'>Delete</button>
       <button onClick={() => handleUpdate(id)} className='updateBtn'>Update</button>
