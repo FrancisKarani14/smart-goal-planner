@@ -17,6 +17,9 @@ function App() {
 
   const numberOfGoals = goals.length
   const totalSaved = goals.reduce((sum, goal) => sum + Number(goal.savedAmount), 0);
+  const completedGoals = goals.filter(goal => Number(goal.savedAmount) >= Number(goal.targetAmount));
+const completedCount = completedGoals.length;
+
 
 
   const url = 'http://localhost:3000/goals';
@@ -155,6 +158,7 @@ function App() {
       />
        <h3>Dear client, you have {numberOfGoals} goals </h3>
        <h3>Dear client, you have saved {totalSaved} </h3>
+       <h3>Congratulations !Dear client, you have completed{completedCount} goals </h3>
       <div className='display'>
         <ul>
           {goals.map(goal => (
