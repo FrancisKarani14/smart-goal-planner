@@ -39,7 +39,7 @@ A simple application for a fintech that Allows users to set Specific saving goal
 
 **process**
 
-- Clone this repository using, (git clone git@github.com:FrancisKarani14/smart-goal-planner.git) in your terminal.
+- Clone this repository using, <link> git@github.com:FrancisKarani14/smart-goal-planner.git </link>in your terminal.
 
 - cd into the directory. and code . into it to open it on vs code.
 
