@@ -21,16 +21,6 @@
       "createdAt": "2024-02-01"
     },
     {
-      "id": "5",
-      "name": "Car Maintenance",
-      "targetAmount": 800,
-      "savedAmount": 600,
-      "balance": 200,
-      "category": "Vehicle",
-      "deadline": "2025-09-15",
-      "createdAt": "2024-06-01"
-    },
-    {
       "id": "7",
       "name": "Holiday Gifts",
       "targetAmount": 1000,

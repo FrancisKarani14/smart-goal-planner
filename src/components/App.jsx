@@ -22,7 +22,7 @@ const completedCount = completedGoals.length;
 
 
 
-  const url = 'http://localhost:3000/goals';
+  const url = 'https://json-server-6-4gkt.onrender.com/goals';
 
   // Fetch goals on initial render
   useEffect(() => {
@@ -177,7 +177,7 @@ const completedCount = completedGoals.length;
                 {...goal}
                 handleDelete={handleDelete}
                 handleUpdate={() => handleUpdate(goal)}
-                daysLeft ={getDaysLeft}
+                // daysLeft ={getDaysLeft}
               />
             </li>
           ))}
