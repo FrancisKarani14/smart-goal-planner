@@ -82,3 +82,10 @@ button{
 .deleteBtn{
     background-color: #ec7063;
 }
+.body h3{
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    
+}

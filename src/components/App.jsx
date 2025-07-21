@@ -15,6 +15,7 @@ function App() {
     deadline: '',
     createdAt: '',
   });
+  const numberOfGoals = goals.length
 
   const url = 'http://localhost:3000/goals';
 
@@ -132,11 +133,13 @@ function App() {
   return (
     <div className='body'>
       <h1 className='welcome'>Welcome to Smart Goal Planner</h1>
+     
       <Form
         formData={formData}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
+       <h3>Dear client, you have {numberOfGoals} goals </h3>
       <div className='display'>
         <ul>
           {goals.map(goal => (

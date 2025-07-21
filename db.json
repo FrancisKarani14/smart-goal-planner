@@ -59,16 +59,6 @@
       "category": "Retirement",
       "deadline": "2035-01-01",
       "createdAt": "2023-01-01"
-    },
-    {
-      "id": "10",
-      "name": "Home Renovation",
-      "targetAmount": 7500,
-      "savedAmount": 1000,
-      "balance": 6500,
-      "category": "Home",
-      "deadline": "2025-03-31",
-      "createdAt": "2024-05-15"
     }
   ]
 }
