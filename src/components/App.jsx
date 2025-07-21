@@ -31,17 +31,27 @@ const completedCount = completedGoals.length;
       .then(data => setGoals(data))
       .catch(err => console.error("Fetch Error:", err));
   }, []);
-
+// allows the date to automatically to the current date
   useEffect(() => {
   const interval = setInterval(() => {
     setFormData(prev => ({
       ...prev,
       createdAt: new Date().toISOString().split('T')[0]
     }));
-  }, 86400000); // 24 hrs in ms
+  }, 86400000); 
 
   return () => clearInterval(interval);
 }, []);
+
+// Number of days left
+// function getDaysLeft(deadline) {
+//   const today = new Date();
+//   const endDate = new Date(deadline);
+//   const diffTime = endDate - today;
+//   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+//   return diffDays;
+// }
+
 
 
   // Automatically update balance when target/saved amounts change
@@ -167,6 +177,7 @@ const completedCount = completedGoals.length;
                 {...goal}
                 handleDelete={handleDelete}
                 handleUpdate={() => handleUpdate(goal)}
+                daysLeft ={getDaysLeft}
               />
             </li>
           ))}
