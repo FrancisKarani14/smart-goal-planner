@@ -5,16 +5,16 @@ import '../reset.css';
 
 function App() {
   const [goals, setGoals] = useState([]);
-  const [formData, setFormData] = useState({
-    id: '',
-    name: '',
-    targetAmount: '',
-    savedAmount: '',
-    balance: '',
-    category: '',
-    deadline: '',
-    createdAt: '',
-  });
+ const [formData, setFormData] = useState({
+  name: '',
+  targetAmount: '',
+  savedAmount: '',
+  balance: '',
+  category: '',
+  deadline: '',
+  createdAt: new Date().toISOString().split('T')[0]  // today in yyyy-mm-dd
+});
+
   const numberOfGoals = goals.length
 
   const url = 'http://localhost:3000/goals';
@@ -26,6 +26,18 @@ function App() {
       .then(data => setGoals(data))
       .catch(err => console.error("Fetch Error:", err));
   }, []);
+  
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setFormData(prev => ({
+      ...prev,
+      createdAt: new Date().toISOString().split('T')[0]
+    }));
+  }, 86400000); // 24 hrs in ms
+
+  return () => clearInterval(interval);
+}, []);
+
 
   // Automatically update balance when target/saved amounts change
   useEffect(() => {
