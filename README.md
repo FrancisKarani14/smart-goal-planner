@@ -1,23 +1,23 @@
 **Smart Goal Planner**
 
-A simple application for a fintech that Allows users to set Specific saving goals. and make savings. One can see the the number of goals set, update a goal, delete an goal, and add a goal.
+A simple application for a fintech that allows users to set Specific saving goals. and make savings. One can see the number of goals set, update a goal, delete a goal, and add a goal.
 
 **Freatures**
 
 > Aform
 
-> A functining delete and update button to manipulate goals
+> A functioning delete and update button to manipulate goals
 
 
-> Automatic Calender setting
+> Automatic Calendar setting
 
 
-> An automatically set ammount of money saved
+> An automatically set amount of money saved
 
 
 > An automatically set Number of goals 
 
-**Tachnologies used**
+**Technologies used**
 
 
 -CSS
@@ -43,9 +43,9 @@ A simple application for a fintech that Allows users to set Specific saving goal
 
 - Clone this repository using, <link> git@github.com:FrancisKarani14/smart-goal-planner.git </link>in your terminal.
 
-- cd into the directory. and code . into it to open it on vs code.
+- cd into the directory. and code. into it to open it in VS Code.
 
-- run npm install  and npm start to open it on the browser.
+- Run npm install  and npm start to open it in the browser.
 
 - The backend has already been deployed.
 
@@ -59,7 +59,7 @@ A simple application for a fintech that Allows users to set Specific saving goal
 
   - A browser
  
-  - use this link (https://meet.google.com/ujf-yzsq-cgj) to open a new tab on your browser
+  - Use this link (https://smart-goal-planner-smoky.vercel.app/) to open a new tab on your browser
  
   - **Author**
  
@@ -76,7 +76,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   
 
