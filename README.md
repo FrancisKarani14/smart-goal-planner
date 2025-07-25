@@ -28,6 +28,8 @@ A simple application for a fintech that Allows users to set Specific saving goal
 
 - Render for backend deployment.
 
+- Vercel for frontend development.
+
 **Local setup**
 **Reequirements**
 
@@ -57,7 +59,7 @@ A simple application for a fintech that Allows users to set Specific saving goal
 
   - A browser
  
-  - use this link to open a new tab on your browser
+  - use this link (https://smart-goal-planner-rho-five.vercel.app/) to open a new tab on your browser
  
   - **Author**
  
