@@ -59,7 +59,7 @@ A simple application for a fintech that Allows users to set Specific saving goal
 
   - A browser
  
-  - use this link (https://smart-goal-planner-rho-five.vercel.app/) to open a new tab on your browser
+  - use this link (https://meet.google.com/ujf-yzsq-cgj) to open a new tab on your browser
  
   - **Author**
  
